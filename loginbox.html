@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="3d.css">
+    <link rel="stylesheet" href="iconfont.css">
+</head>
+<body>
+    <header>
+        <a class="displayform" href="#">
+            <i class="iconfont icon-user1"></i>
+        </a>
+    </header>
+    <main>
+        <div class="flip-module login">
+            <div class="module module-login">
+                <a href="#">
+                    <i class="iconfont icon-close"></i>
+                </a>
+                <div class="tag">
+                    <a class="login active" href="#">登陆</a>
+                    <a class="register" href="#">注册</a>
+                </div>
+                <div class="form-content">
+                    <div class="errormessage"></div>
+                    <form action="#" method="POST">
+                        <div class="input-content">
+                            <i class="iconfont icon-user"></i>
+                            <input name="username" type="text" placeholder="用户名">
+                        </div>
+                        <div class="input-content">
+                            <i class="iconfont icon-password"></i>
+                            <input name="password" type="password" placeholder="密码">
+                        </div>
+                        <div class="submit">
+                            <input type="submit" value="登录">
+                        </div>    
+                    </form>
+                </div>
+            </div>
+            <div class="module module-register">
+                <a href="#">
+                    <i class="iconfont icon-close"></i>
+                </a>
+                <div class="tag">
+                    <a class="login" href="#">登陆</a>
+                    <a class="register active" href="#">注册</a>
+                </div>
+                <div class="form-content">
+                    <div class="errormessage"></div>
+                    <form action="#" method="POST">
+                        <div class="input-content">
+                            <i class="iconfont icon-user"></i>
+                            <input name="username" type="text" placeholder="输入用户名">
+                        </div>
+                        <div class="input-content">
+                            <i class="iconfont icon-password"></i>
+                            <input name="password" type="password" placeholder="输入密码">
+                        </div>
+                        <div class="input-content">
+                            <i class="iconfont icon-password"></i>
+                            <input name="password2" type="password" placeholder="再次输入密码">
+                        </div>
+                        <div class="submit">
+                            <input type="submit" value="注册">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="3d.js"></script>
+</body>
+</html>

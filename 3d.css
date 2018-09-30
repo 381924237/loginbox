@@ -1,0 +1,84 @@
+/*common css*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+    color: #444;
+}
+html,body,main{
+    height: 100%;
+}
+main {
+    background: linear-gradient(to right top,
+        rgba(7,90,121,0.73), 
+        rgba(158,68,89,0.39)),
+        url(image.jpg) center center no-repeat;
+    background-size: cover;
+}
+/*form*/
+
+.flip-module {
+    display: none;
+}
+.module {
+    width: 400px;
+    padding: 20px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    background-color: #fff;
+    box-shadow: 0 0 10px 3px rgba(0,0,0,0.6);
+}
+
+
+.flip-module.login .module-login,.flip-module.register .module-register {
+    transform: translate(-50%,-50%) rotateY(0deg);
+    backface-visibility: hidden;
+    transition: all 1s;
+}
+
+.flip-module.login .module-register,.flip-module.register .module-login {
+    transform: translate(-50%,-50%) rotateY(180deg);
+    backface-visibility: hidden;
+    transition: all 1s;
+}
+/*tag*/
+.tag {
+    text-align: center;
+}
+.tag a {
+    margin: 0 8px;
+}
+.tag .active {
+    border-bottom: 2px solid #444;
+}
+
+/*form-content*/
+.form-content {
+    padding: 20px 30px;
+}
+.input-content {
+    position: relative;
+}
+.input-content,.submit {
+    margin-top: 11px;
+}
+.input-content input{
+    padding: 10px 28px;
+    width: 100%;
+}
+.submit input {
+    padding: 6px 10px;
+    background: #fff;
+    border: none;
+    box-shadow: 0 0 2px rgba(0,0,0,0.4);
+}
+
+.errormessage {
+    color: red;
+    font-size: 13px;
+}
